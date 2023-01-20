@@ -6,6 +6,14 @@ This demo repo consists of two submodules:
 
 - `wasmedge-wasi` defines the two crates `wasmedge-wasi` and `wasmedge-wasi-example`, which implement the WASI specification.
 
+## Clone the repo
+
+Run the following command in the terminal program to clone the repo:
+
+  ```bash
+  git clone --recurse-submodules git@github.com:apepkuss/wasmedge-custom-wasi-demo.git
+  ```
+
 ## Run the test cases for the wasi host functions
 
 The test cases for the wasi host functions are located in `WasmEdge/bindings/rust/wasmedge-sys/src/instance/custom_wasi_module.rs`. For now, we have 6 test cases for the 6 wasi host functions, respectively. To run the test cases, you can follow the steps below:
@@ -35,10 +43,10 @@ The test cases for the wasi host functions are located in `WasmEdge/bindings/rus
 
 - Run the test cases
 
-  Take the test case `test_wasi_fd_write` as an example. To run the test case, run the two commands below in the root directory of this repo:
+  Take the test case `test_wasi_fd_write` as an example. To run the test case, run the two commands below:
 
   ```bash
-  cd WasmEdge/bindings/rust/
+  cd wasmedge-custom-wasi-demo/WasmEdge/bindings/rust/
 
   cargo test -p wasmedge-sys test_wasi_fd_write -- --nocapture
   ```
