@@ -1,3 +1,7 @@
 [submodule "wasmedge-wasi"]
 	path = wasmedge-wasi
 	url = git@github.com:apepkuss/wasmedge-wasi.git
+[submodule "WasmEdge"]
+	path = WasmEdge
+	url = git@github.com:apepkuss/WasmEdge.git
+	branch = rust/feat-new-vm
