@@ -1,0 +1,3 @@
+[submodule "wasmedge-wasi"]
+	path = wasmedge-wasi
+	url = git@github.com:apepkuss/wasmedge-wasi.git
